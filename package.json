@@ -1,0 +1,29 @@
+{
+  "name": "ali-img-upload",
+  "version": "1.0.1",
+  "description": "ali oss upload",
+  "main": "index.js",
+  "scripts": {
+    "test": "null"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bigbigDreamer/Ali-OSS-Upload.git"
+  },
+  "keywords": [
+    "阿里云",
+    "OSS"
+  ],
+  "author": "Eric Wang",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bigbigDreamer/Ali-OSS-Upload/issues"
+  },
+  "homepage": "https://github.com/bigbigDreamer/Ali-OSS-Upload#readme",
+  "dependencies": {
+    "@ant-design/icons": "^4.1.0",
+    "ali-oss": "^6.8.0",
+    "antd": "^4.1.4",
+    "prop-types": "^15.7.2"
+  }
+}
