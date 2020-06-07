@@ -1,6 +1,6 @@
 {
   "name": "ali-img-upload",
-  "version": "1.0.1",
+  "version": "1.0.9",
   "description": "ali oss upload",
   "main": "index.js",
   "scripts": {

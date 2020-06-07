@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, Fragment } from 'react';
 import OSS from 'ali-oss';
 import PropTypes from 'prop-types';
 import { Spin, Upload } from 'antd';
@@ -6,6 +6,15 @@ import { PlusOutlined } from '@ant-design/icons';
 
 
 import './index.less';
+
+function UploadButton({ uploadBtnText }) {
+    return (
+            <Fragment>
+                <PlusOutlined />
+                <div className="ant-upload-text"> { uploadBtnText } </div>
+            </Fragment>
+    )
+}
 
 export default function AliUpload({ ossConfig = {
     region: '',
@@ -92,20 +101,15 @@ export default function AliUpload({ ossConfig = {
         className: 'ali-uploader'
     };
 
-    const uploadButton = (
-            <div>
-                <PlusOutlined />
-                <div className="ant-upload-text"> { uploadBtnText } </div>
-            </div>
-    );
-
     return (
             <div className="ali-upload-container">
                 {show === true ? (
                         <Spin style={{ position: 'relative', left: '40px', top: '40px' }} />
                 ) : (
                         <Upload {...uploadProps}>
-                            {(imgUrl || defaultImgUrl) ? <img src={imgUrl || defaultImgUrl} alt="avatar" style={{ width: '100%', height: '80px' }} /> : uploadButton}
+                            {(imgUrl || defaultImgUrl)
+                                    ? <img src={imgUrl || defaultImgUrl} alt="avatar" style={{ width: '100%', height: '80px' }} />
+                                    : <UploadButton uploadBtnText={uploadBtnText}/>}
                         </Upload>
                 )}
             </div>
