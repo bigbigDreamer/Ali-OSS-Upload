@@ -95,7 +95,7 @@ module.exports = {
 ```
 ## Note
 
-- 注意在重写babel配置的时候，对于less处理的loader顺序。loader编译的顺序始终是从下往上的,也即从左往右。
+- 注意在重写babel配置的时候，对于less处理的loader顺序。loader编译的顺序始终是从下往上的,也即从右往左。
 - include部分应始终包含node_modules和src两部分。
 
 
