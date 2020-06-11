@@ -97,6 +97,8 @@ module.exports = {
 
 ## Demo
 
+![alt](https://h5-chatroom.oss-cn-beijing.aliyuncs.com/ali-upload/uploader.gif)
+
 
 
 ## LICENSE [MIT](https://github.com/bigbigDreamer/Ali-OSS-Upload/blob/master/LICENSE)

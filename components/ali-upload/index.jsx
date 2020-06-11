@@ -108,7 +108,9 @@ export default function AliUpload({ ossConfig = {
                 ) : (
                         <Upload {...uploadProps}>
                             {(imgUrl || defaultImgUrl)
-                                    ? <img src={imgUrl || defaultImgUrl} alt="upload-img" className="upload-img" />
+                                    ? <div className="img-box">
+                                        <img src={imgUrl || defaultImgUrl} alt="upload-img" className="upload-img" />
+                                    </div>
                                     : <UploadButton uploadBtnText={uploadBtnText}/>}
                         </Upload>
                 )}
