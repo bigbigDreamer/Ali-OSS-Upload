@@ -1,5 +1,21 @@
 # Ali-OSS-Img-Upload
 
+<p style="text-align: center">
+
+<img alt="budge" src="https://img.shields.io/badge/Author-EricWang-blueviolet" />
+
+<img alt="budge" src="https://img.shields.io/badge/language-react-%230081ff" />
+
+<img src="https://img.shields.io/npm/dm/ali-img-upload" alt="budge"/>
+
+<img src="https://img.shields.io/github/repo-size/bigbigDreamer/Ali-OSS-Upload" alt="budge"/>
+
+<img src="https://img.shields.io/github/commit-activity/y/bigbigDreamer/Ali-OSS-Upload"  alt="budge"/>
+
+<img  src="https://img.shields.io/npm/l/ali-img-upload" alt="budge"/>
+
+</p>
+
 ## 安装
 
 ```bash
