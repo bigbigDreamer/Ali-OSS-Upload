@@ -104,11 +104,11 @@ export default function AliUpload({ ossConfig = {
     return (
             <div className="ali-upload-container">
                 {show === true ? (
-                        <Spin style={{ position: 'relative', left: '40px', top: '40px' }} />
+                        <Spin />
                 ) : (
                         <Upload {...uploadProps}>
                             {(imgUrl || defaultImgUrl)
-                                    ? <img src={imgUrl || defaultImgUrl} alt="avatar" style={{ width: '100%', height: '80px' }} />
+                                    ? <img src={imgUrl || defaultImgUrl} alt="upload-img" className="upload-img" />
                                     : <UploadButton uploadBtnText={uploadBtnText}/>}
                         </Upload>
                 )}
